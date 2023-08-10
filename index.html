@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./public/main.css">
-  <title>Document</title>
-</head>
-<body>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <figure class="header__logo">
+          <img src="./images/logo.svg" alt="" />
+        </figure>
+        <div class="header__score">
+          <p>SCORE</p>
+          <span>12</span>
+        </div>
+      </header>
 
-    <header class="header">
-      <figure class="header__logo">
-        <img src="./images/logo.svg" alt="">
-      </figure>
-      <div class="header__score">
-        <p>SCORE</p>
-        <span>12</span>
+      <div class="elections">
+        <figure class="triangle">
+          <img src="./images/bg-triangle.svg" alt="" />
+        </figure>
+        <div class="handContainer border h">
+          <figure class="hand center bgElection">
+            <img src="./images/icon-paper.svg" alt="" />
+          </figure>
+        </div>
+
+        <div class="scissorContainer border s">
+          <figure class="scissor center bgElection">
+            <img src="./images/icon-scissors.svg" alt="" />
+          </figure>
+        </div>
+
+        <div class="rockContainer border r">
+          <figure class="rock center bgElection">
+            <img src="./images/icon-rock.svg" alt="" />
+          </figure>
+        </div>
       </div>
-    </header>
-
-  </main>
-
-  <footer>
-    <button class="ruleButton">RULES</button>
-  </footer>
-</body>
+    </main>
+    
+    <footer>
+      <button class="ruleButton">RULES</button>
+    </footer>
+  </body>
 </html>

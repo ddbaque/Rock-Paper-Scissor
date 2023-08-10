@@ -36,6 +36,12 @@ body {
 }
 
 /** ======== Setep 1 ======== */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -73,6 +79,91 @@ body {
 .header__score p {
   font-weight: 600;
   color: var(--scoreText);
+}
+
+/** ========= Elections Button ========= */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgElection {
+  background-color: white;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+}
+
+.elections {
+  position: relative;
+
+  display: grid;
+  place-content: center;
+
+  padding: 60px;
+}
+
+.handContainer {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+.scissorContainer {
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
+
+.rockContainer {
+    position: absolute;
+    bottom:10%;
+    left: 43%;
+}
+.triangle img {
+  width: 250px;
+  position: relative;
+  z-index: -2;
+}
+
+.hand {
+  position: relative;
+}
+
+.border::before {
+  content: "";
+  position: absolute;
+
+  width: 130%;
+  height: 130%;
+  left: -15%;
+  top: -15%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.rock {
+  position: relative;
+}
+
+.scissor {
+  position: relative;
+}
+
+.border.s::before {
+    background: linear-gradient(to bottom, var(--scissor1), var(--scissor2));
+}
+
+.border.r::before {
+
+    background: linear-gradient(to bottom, var(--rock1), var(--rock2));
+}
+
+.border.h::before {
+
+    background: linear-gradient(to bottom, var(--paper1), var(--paper2));
 }
 
 /** ========= Button Rules ========= */
