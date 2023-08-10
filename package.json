@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "name": "rock-paper-scissor",
+  "description": "![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev" : "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

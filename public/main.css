@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+:root {
+  --bg: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  --darkText: hsl(229, 25%, 31%);
+  --scoreText: hsl(229, 64%, 46%);
+  --headerOutline: hsl(217, 16%, 45%);
+
+  --scissor1: hsl(39, 89%, 49%);
+  --scissor2: hsl(40, 84%, 53%);
+
+  --paper1: hsl(230, 89%, 62%);
+  --paper2: hsl(230, 89%, 65%);
+
+  --rock1: hsl(349, 71%, 52%);
+  --rock2: hsl(349, 70%, 56%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--bg);
+  /** to center the main play */
+  display: grid;
+  place-content: center;
+
+  /** to positionate the button rules */
+  position: relative;
+}
+
+/** ======== Setep 1 ======== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 3px solid var(--headerOutline);
+  border-radius: 10px;
+
+  width: 700px;
+
+  padding: 10px 15px;
+}
+
+.header__score {
+  width: 120px;
+  height: 99px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.header__score span {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.header__score p {
+  font-weight: 600;
+  color: var(--scoreText);
+}
+
+/** ========= Button Rules ========= */
+.ruleButton {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+
+  width: 100px;
+
+  padding: 5px 10px;
+
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  color: white;
+}
